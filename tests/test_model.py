@@ -49,8 +49,8 @@ def test_model_transform_illegal_aminoacids():
         positive_peptides='data/raw/positive.txt',
         negative_peptides='data/raw/negative.txt'
      )
-     peptide = 'AAAGO!_@.'
-     X_transform = model
+     peptide = 'AAAGO'
+     X_transform = model.transform ([peptide])
 
 def test_model_save():
 
